@@ -2,11 +2,17 @@
     <string name="app_name">Reptiles</string>
     <string name="principalTitleString">CATEGORIAS DE REPTILES</string>
 
+    <!-- Activity 2 resources -->
     <string name="firstPrincipalButtonString">Cocodrilos</string>
     <string name="secondPrincipalButtonString">Squamatas</string>
     <string name="thirdPrincipalButtonString">Quelenios</string>
     <string name="fourthPrincipalButtonString">Binocéfalos</string>
+
+
+
+    <!-- Activity 2 resources -->
     <string name="title_activity_2">Activity2</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+
 </resources>

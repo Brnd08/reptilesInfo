@@ -4,6 +4,7 @@ import static com.example.reptiles.R.id.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,26 +23,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        principalButtonsListener = (View view) ->{
-                String buttonText = ((Button) view).getText().toString();
-                switch (buttonText){
-                    case "Cocodrilos":
-                        break;
-                    case "Squamatas":
-                        break;
-                    case "Quelenios":
-                        break;
-                    case "Binocéfalos":
-                        break;
-                    default:
-                        System.out.println("hi");
-            }
+        principalButtonsListener = (View view) -> {
+            String buttonText = ((Button) view).getText().toString();
+            startActivity(new Intent(this, Activity2.class).putExtra("classification", buttonText));
         };
 
-        firstPrincipalButton = (Button)findViewById(firstButton);
-        secondPrincipalButton = (Button)findViewById(secondButton);
-        thirdPrincipalButton = (Button)findViewById(thirdButton);
-        fourthPrincipalButton = (Button)findViewById(fourthButton);
+        firstPrincipalButton = (Button) findViewById(firstButton);
+        secondPrincipalButton = (Button) findViewById(secondButton);
+        thirdPrincipalButton = (Button) findViewById(thirdButton);
+        fourthPrincipalButton = (Button) findViewById(fourthButton);
 
         firstPrincipalButton.setOnClickListener(principalButtonsListener);
         secondPrincipalButton.setOnClickListener(principalButtonsListener);
@@ -49,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         fourthPrincipalButton.setOnClickListener(principalButtonsListener);
 
     }
-
 
 
 }
