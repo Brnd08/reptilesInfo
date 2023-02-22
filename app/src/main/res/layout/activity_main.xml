@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="226dp" />
+        app:layout_constraintGuide_begin="276dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/principalButtonsVerticalMargin"
             android:backgroundTint="@color/principalButtonsBackgroundTint"
-            android:text="Button" />
+            android:text="@string/firstPrincipalButtonString" />
 
         <Button
             android:id="@+id/button4"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/principalButtonsVerticalMargin"
             android:backgroundTint="@color/principalButtonsBackgroundTint"
-            android:text="Button" />
+            android:text="@string/secondPrincipalButtonString" />
 
         <Button
             android:id="@+id/button5"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/principalButtonsVerticalMargin"
             android:backgroundTint="@color/principalButtonsBackgroundTint"
-            android:text="Button" />
+            android:text="@string/thirdPrincipalButtonString" />
 
         <Button
             android:id="@+id/button6"
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/principalButtonsVerticalMargin"
             android:backgroundTint="@color/principalButtonsBackgroundTint"
-            android:text="Button" />
+            android:text="@string/fourthPrincipalButtonString" />
     </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -102,9 +102,9 @@
 
         <TextView
             android:id="@+id/textView"
-            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="@string/principalTitleString"
             android:textColor="@color/principalTitleColor"
             android:textSize="@dimen/principalTitleDimension"
@@ -116,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="0dp" />
+        app:layout_constraintGuide_begin="31dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
