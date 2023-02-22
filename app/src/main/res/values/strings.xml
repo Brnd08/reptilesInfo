@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Reptiles</string>
     <string name="principalTitleString">CATEGORIAS DE REPTILES</string>
+
+    <string name="firstPrincipalButtonString">Cocodrilos</string>
+    <string name="secondPrincipalButtonString">Squamatas</string>
+    <string name="thirdPrincipalButtonString">Quelenios</string>
+    <string name="fourthPrincipalButtonString">Binocéfalos</string>
 </resources>
