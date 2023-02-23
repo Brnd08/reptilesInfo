@@ -1,41 +1,58 @@
 package com.example.reptiles;
 
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
-import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import com.example.reptiles.ui.main.SectionsPagerAdapter;
-import com.example.reptiles.databinding.Activity2Binding;
+
+import android.webkit.WebView;
+import android.widget.TextView;
+
+import java.util.HashMap;
+
 
 public class Activity2 extends AppCompatActivity {
 
-private Activity2Binding binding;
-
+    TextView titleText;
+    WebView myWebView;
+    TabLayout.OnTabSelectedListener tabSelectedListener;
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-     binding = Activity2Binding.inflate(getLayoutInflater());
-     setContentView(binding.getRoot());
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        TabLayout.Tab newtab = new TabLayout.Tab();
+        newtab.setText("Brevirostres");
+        tabLayout.addTab(newtab, true);
 
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = binding.viewPager;
-        viewPager.setAdapter(sectionsPagerAdapter);
-        TabLayout tabs = binding.tabs;
-        tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = binding.fab;
+        myWebView = (WebView) findViewById(R.id.webview);
+        myWebView.getSettings().setJavaScriptEnabled(true);
 
-        fab.setOnClickListener(new View.OnClickListener() {
+
+
+        titleText = (TextView) findViewById(R.id.secondActivityTitle);
+
+        Bundle receivedParameters = getIntent().getExtras();
+        String newActivityTitle = receivedParameters.getString("classification");
+        titleText.setText(newActivityTitle);
+
+        HashMap<String, String> sections = (HashMap<String, String>) receivedParameters.getSerializable("sections");
+
+        tabSelectedListener = new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onTabSelected(TabLayout.Tab tab) {
+                myWebView.loadUrl(sections.get(tab.getText()));
             }
-        });
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        };
     }
 }
