@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mainActivityBackgroundColor"
+
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:srcCompat="@drawable/reptile" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -76,6 +88,7 @@
             android:layout_marginVertical="@dimen/principalButtonsVerticalMargin"
             android:backgroundTint="@color/principalButtonsBackgroundTint"
             android:text="@string/fourthPrincipalButtonString" />
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline
@@ -131,5 +144,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_end="0dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
