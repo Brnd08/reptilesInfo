@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 case "Rincocéfalos":
                     sections.put("Sphenodontidae","https://en.wikipedia.org/wiki/Gephyrosauridae");
                     sections.put("Pleurosauridae","https://es.wikipedia.org/wiki/Pleurosauridae");
-                    sections.put("Gephyrosauridae","https://es.wikipedia.org/w/index.php?title=Gephyrosauridae&action=edit&redlink=1");
+                    sections.put("Gephyrosauridae","https://en.wikipedia.org/wiki/Gephyrosauridae");
                     break;
                 default:
                     sections.put("google","https://www.google.com.mx");
