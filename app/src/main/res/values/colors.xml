@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="principalTitleColor">#2abbf5</color>
-    <color name="mainActivityBackgroundColor">#383f42</color>
+    <color name="mainActivityBackgroundColor">#383f42CC</color>
 
     <color name="principalButtonsBackgroundTint">#aa1ff0</color>
 

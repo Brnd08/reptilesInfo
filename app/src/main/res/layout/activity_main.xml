@@ -16,8 +16,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@drawable/reptile" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/reptile"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -99,13 +100,14 @@
         app:layout_constraintGuide_begin="703dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginHorizontal="0dp"
         android:layout_marginVertical="0dp"
         android:gravity="center"
-        android:orientation="vertical"
 
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintHorizontal_bias="1.0"
@@ -121,6 +123,7 @@
             android:text="@string/principalTitleString"
             android:textColor="@color/principalTitleColor"
             android:textSize="@dimen/principalTitleDimension"
+            android:background="@color/mainActivityBackgroundColor"
             android:textStyle="bold" />
     </LinearLayout>
 
