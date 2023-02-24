@@ -10,8 +10,8 @@ Aplicacion que muestra parte de la taxonomia de los reptiles
 ## Imagenes
 
 ### Principal Activity
-![cal1](https://raw.githubusercontent.com/Brnd08/reptilesInfo/Main/img/principal.png)
+![pantalla principal](https://raw.githubusercontent.com/Brnd08/reptilesInfo/main/img/principal.png)
 ### Second Activity with tabs
-![calc2](https://raw.githubusercontent.com/Brnd08/reptilesInfo/Main/img/sections.png)
+![pantalla sobre informacion](https://raw.githubusercontent.com/Brnd08/reptilesInfo/main/img/sections.png)
 
  
